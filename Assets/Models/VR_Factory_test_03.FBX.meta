@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 0071354e91b15eb47887624276bbbd78
+timeCreated: 1540985958
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 1
+    100002: Box002
+    100004: BWom0007-S
+    100006: Cylinde293
+    100008: default
+    100010: g
+    100012: Group001
+    100014: Group002
+    100016: Object001
+    100018: Object002
+    100020: Object003
+    100022: Plane002
+    100024: Plane003
+    100026: Plane004
+    100028: //RootNode
+    400000: 1
+    400002: Box002
+    400004: BWom0007-S
+    400006: Cylinde293
+    400008: default
+    400010: g
+    400012: Group001
+    400014: Group002
+    400016: Object001
+    400018: Object002
+    400020: Object003
+    400022: Plane002
+    400024: Plane003
+    400026: Plane004
+    400028: //RootNode
+    2100000: green
+    2100002: BWom0007
+    2100004: No Name
+    2100006: _Bandaid02___Default
+    2100008: _Bandaid_crayfishdiffuse
+    2100010: _011_syringedefault
+    2300000: Box002
+    2300002: BWom0007-S
+    2300004: Cylinde293
+    2300006: default
+    2300008: Object001
+    2300010: Object002
+    2300012: Object003
+    2300014: Plane002
+    2300016: Plane003
+    2300018: Plane004
+    3300000: Box002
+    3300002: BWom0007-S
+    3300004: Cylinde293
+    3300006: default
+    3300008: Object001
+    3300010: Object002
+    3300012: Object003
+    3300014: Plane002
+    3300016: Plane003
+    3300018: Plane004
+    4300000: Object003
+    4300002: Object001
+    4300004: Object002
+    4300006: Cylinde293
+    4300008: BWom0007-S
+    4300010: Plane004
+    4300012: Box002
+    4300014: Plane003
+    4300016: Plane002
+    4300018: default
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
