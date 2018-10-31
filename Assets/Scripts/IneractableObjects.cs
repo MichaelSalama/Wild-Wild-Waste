@@ -7,7 +7,8 @@ public class IneractableObjects : MonoBehaviour {
     [SerializeField]
     WasteTypes type;
 
-	void Update () {
+	void Update ()
+    {
 	    	
 	}
 }
