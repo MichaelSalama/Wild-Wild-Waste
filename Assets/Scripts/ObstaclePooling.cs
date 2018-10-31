@@ -1,15 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using WeightedRandomization; 
 
 public class ObstaclePooling : MonoBehaviour
 {
+    
     [System.Serializable]
     public class Pool
     {
         public string tag;
         public GameObject prefab;
         public int size;
+       [Header ("please enter between 0,1, so Sum equals to 1")]
+        public float rate;
     }
 
     #region Singleton
@@ -23,17 +27,23 @@ public class ObstaclePooling : MonoBehaviour
     public List<Pool> pools;
     public Dictionary<string, Queue<GameObject>> poolDictionary;
     GameObject objectToSpawn;
+
+    public WeightedRandomizer<GameObject> randObject = new WeightedRandomizer<GameObject>();
     void Start()
     {
         poolDictionary = new Dictionary<string, Queue<GameObject>>();
+
+        
         foreach (Pool pool in pools)
         {
             Queue<GameObject> objectPool = new Queue<GameObject>();
             for (int i = 0; i < pool.size; i++)
             {
-                GameObject obj = Instantiate(pool.prefab);
+                GameObject obj = Instantiate(randObject.GetNext());
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
+
+                randObject.AddOrUpdateWeight(pools[i].prefab, pools[i].rate);
             }
             poolDictionary.Add(pool.tag, objectPool);
         }
@@ -90,6 +100,9 @@ public class ObstaclePooling : MonoBehaviour
                 {
                     objectToSpawn = Instantiate(pools[i].prefab);
                     StartCoroutine(ReturnToPool(tag, returnToPoolCD, objectToSpawn));
+
+                    
+
                     return objectToSpawn;
                 }
                 if (i == pools.Count)
@@ -103,8 +116,7 @@ public class ObstaclePooling : MonoBehaviour
             objectToSpawn = poolDictionary[tag].Dequeue();
 
             objectToSpawn.SetActive(true);
-
-
+            
             StartCoroutine(ReturnToPool(tag, returnToPoolCD, objectToSpawn));
             return objectToSpawn;
         }
@@ -144,4 +156,5 @@ public class ObstaclePooling : MonoBehaviour
             }
         }
     }
+
 }
